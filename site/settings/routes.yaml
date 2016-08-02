@@ -1,0 +1,19 @@
+routes:
+  /blog/tags: blog/taxonomies
+  /search: search
+  /users: user/index
+  /users/{username}: user/profile
+  /account: user/account
+  /login: auth/login
+  /register: auth/register
+  /forgot-password: auth/password-forgot
+  /reset-password: auth/password-reset
+collections:
+  blog: 'blog/{slug}'
+  stuff: '/stuff/{slug}'
+  siteoftheday: 'siteoftheday/{slug}'
+  downloads: 'downloads/{slug}'
+  recommendations: recommendations/
+taxonomies:
+  tags: '/site-of-the-day/includes/{slug}'
+vanity: [ ]

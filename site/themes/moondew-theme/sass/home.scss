@@ -1,0 +1,65 @@
+.homeContainer{
+	padding-bottom: 50px;
+
+	p{
+		padding-left: 250px;
+		padding-right: 250px;
+		font-weight: 400;
+	}
+
+}
+
+.postListItemHome img{
+	margin-bottom: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.postListItemHome p{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.datePostedHome{
+	float: right;
+	position: relative;
+	top: -24px;
+	right: 20px;
+	font-size: 14px;
+}
+
+.postsContainerHome{
+	text-align: left;
+	margin-top: 20px;
+}
+
+.postsContainerHome--left{
+	padding-right: 50px;
+
+	.postsContainerHome_title{
+		color: $green;
+	}
+}
+
+.postsContainerHome--right{
+	padding-left: 50px;
+
+	.postsContainerHome_title{
+		color: $green;
+	}
+}
+
+
+.postsContainerHome_title{
+	position: relative;
+	left: 0px;
+	top: 35px;
+}
+
+.homePostContentTitle{
+	width: 520px;
+	font-weight: 700;
+	font-style: normal;
+	color: $blue !important;
+	padding-left: 10px;
+}

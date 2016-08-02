@@ -1,0 +1,36 @@
+<div class="row home">
+	<div class="medium-8 medium-push-2 columns content">
+		<h2>{{ title }}</h2>
+		{{ collection from="siteoftheday" limit="6" paginate="true" as="posts" }}
+		    	<div>
+		    		<div>
+			    		{{ posts }}
+				    		<div class="postheroimage">
+				    			{{ assets:hero_image }}
+									<a href="{{ slug ensure_left="siteoftheday/" }}"><img src="{{ url }}" alt="{{ alt }}" /></a>
+								{{ /assets:hero_image }}
+				    		</div>
+				    		<div class="postcontent">
+								<a href="{{ url }}">{{ title | safe_truncate:50:... }}</a>
+								<p class="postdate">{{ date }}</p>
+								<hr>
+								<p class="posttags">Includes—
+									{{ relate:tags }}
+										<a href="{{ url }}">{{ title }}</a>
+									{{ /relate:tags }}
+								</p>
+								<hr>
+							</div>
+						{{ /posts }}
+					</div>    
+				</div>
+				<div class="paginate">
+					{{ paginate }}
+				        <a href="{{ prev_page }}">← Newer</a>
+				        <a href="{{ next_page }}">Older →</a>
+				        <p>Page {{ current_page }} of {{ total_pages }}</p>
+				    {{ /paginate }}
+				</div>
+		{{ /collection }}
+	</div>
+</div>

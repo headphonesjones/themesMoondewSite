@@ -1,0 +1,18 @@
+title: Blog
+hide: true
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  hero_image:
+    type: assets
+    display: Hero Image
+    container: main
+    folder: img
+    max_files: 1
+  content:
+    type: markdown
+    display: Content
+    localizable: true
+    cheatsheet: false

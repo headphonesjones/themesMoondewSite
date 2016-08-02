@@ -1,0 +1,19 @@
+.postDetailMainImage{
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.postListItem img{
+	border: solid 12px rgba($white, .6);
+	margin-bottom: 50px;
+}
+
+
+.postListItem{
+	margin-top: 50px;
+
+	img{
+		height: 250px !important;
+	}
+}

@@ -1,0 +1,11 @@
+title: 'Theme Recommendations & Lists'
+fields:
+  title:
+    type: title
+    display: Title
+  hero_image:
+    type: assets
+    display: Hero Image
+    container: main
+    folder: img
+    max_files: 1

@@ -1,0 +1,18 @@
+<div class="row">
+	<div class="large-1 medium-2 small-4 columns">
+		{{ assets path="assets" folder="img" limit="1"}}
+	    <a href="/"><img src="/assets/img/Moondew.svg" alt="Moondew web development logo" id="logo"></a>
+		{{ /assets }}
+	</div>
+	<div class="large-11 medium-10 small-8 columns">
+		<h1 id="companyName">THEMES BY MOONDEW</h1>
+		<p>Trending static and cms <i>website themes</i> for everyone.</p>
+		<nav>
+			{{ nav from="/" include_home="true" scope="tag" }}	
+				<li {{ if is_current or is_parent }} class="active"{{ /if }}>
+					<a href="{{ url }}">{{ tag:nav_title or title }}</a>
+               	</li>
+            {{ /nav }}
+		</nav>
+	</div>
+</div>

@@ -1,0 +1,75 @@
+.navListContainer{
+	list-style-type: none;
+	margin-top: -24px;
+	margin-left: 20px;
+
+	li{
+		display: inline-block;
+		padding-left: 30px;
+		padding-right: 30px;
+
+		&.active{
+			a{
+				text-decoration: none;
+				border-bottom: 1px solid $blue;	
+				padding-bottom: 6px;
+				color: $blue !important;
+			}
+		}
+
+		a{
+			font-size: 16px;
+			letter-spacing: .025rem;
+			transition: all .2s ease;
+			border-bottom: 1px solid transparent;
+			padding-bottom: 3px;
+
+			&:hover{
+				text-decoration: none;
+				border-bottom: 1px solid $blue;	
+				padding-bottom: 6px;	
+				color: $blue !important;
+			}
+		}
+	}
+
+}
+
+
+.logoTagline{
+	position: absolute;
+    top: 12px;
+    padding-right: 40px;
+    left: 95px;
+}
+
+
+#companyName{
+	position: absolute;
+	top: 8px;
+	left: 228px;
+	letter-spacing: 0.17em;
+	font-size: 2.6em !important;
+    line-height: 1.5em !important; 
+}
+
+#companyTagline{
+	position: absolute;
+	top: 61px;
+	left: 228px;
+	font-size: 24px;
+}
+
+#logo{
+	margin-top: 15px;
+	max-width: 70px;
+}
+
+.navContainer{
+	background-color: tansparent;
+
+	h6{
+		position: relative;
+		top: 8px;
+	}
+}

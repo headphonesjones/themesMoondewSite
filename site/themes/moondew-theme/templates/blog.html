@@ -1,0 +1,30 @@
+<div class="row blogpage">
+	<div class="medium-8 medium-push-2 columns content">
+
+		{{ collection from="blog" limit="6" paginate="true" as="posts" }}
+		    	<div>
+		    		<div>
+			    		{{ posts }}
+			    			<div class="postcontent">
+								<h2><a href="{{ url }}">{{ title | safe_truncate:100:... }}</a></h2>
+								<p class="postdate">{{ date }}</p>
+							</div>
+				    		<div class="postheroimage">
+				    			{{ assets:hero_image }}
+									<a href="{{ slug ensure_left="blog/" }}"><img src="{{ url }}" alt="{{ alt }}" /></a>
+								{{ /assets:hero_image }}
+				    		</div>
+				    		<hr>
+						{{ /posts }}
+					</div>    
+				</div>
+				<div class="paginate">
+					{{ paginate }}
+				        <a href="{{ prev_page }}">← Newer</a>
+				        <a href="{{ next_page }}">Older →</a>
+				        <p>Page {{ current_page }} of {{ total_pages }}</p>
+				    {{ /paginate }}
+				</div>
+		{{ /collection }}
+	</div>
+</div>
