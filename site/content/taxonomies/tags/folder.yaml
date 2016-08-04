@@ -1,2 +1,4 @@
 title: Tags
-fieldset: null
+fieldset: includes
+template: detailincludes
+page_title: {{ title }} · Theme Recommendations & Lists by Moondew

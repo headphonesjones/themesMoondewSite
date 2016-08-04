@@ -1,0 +1,14 @@
+title: Includes
+fields:
+  title:
+    type: title
+    display: Title
+  body:
+    type: markdown
+    display: Body
+    cheatsheet: false
+    container: main
+    folder: img
+  durl:
+    type: text
+    display: Download URL

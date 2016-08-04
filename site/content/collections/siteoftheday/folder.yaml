@@ -1,5 +1,5 @@
 title: Site of the Day
 order: date
 fieldset: siteoftheday
-template: soddetail
+template: detailsiteoftheday
 page_title: '{{ title }} · Themes by Moondew'

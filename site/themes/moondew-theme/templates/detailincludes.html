@@ -1,9 +1,9 @@
-<div class="row home">
+<div class="row detailincludes">
 	<div class="medium-8 medium-push-2 columns content">
 		<h2>{{ title }}</h2>
-		<p>Tungsten is a sans-serif typeface released by Hoefler & Frere-Jones (now known as Hoefler & Co.) in 2009. This style of flat-sided sans-serif is known as gaspipe and was popular with poster designers of the twentieth century as the flat sides made it easy to space letters. The normal version of Tungsten is a fairly condensed font, however, there are three additional widths—narrow, condensed and compressed—that take the design into ever more compact territory. Each width of Tungsten is available in eight weights, however, there are no italic styles available.</p>
-		<a href="http://www.wordpress.org">Download Wordpress</a>
-		{{ collection from="siteoftheday" taxonomy="Wordpress" limit="6" paginate="true" as="posts" }}
+		<p>{{ body }}</p>
+		<a href="http://{{ durl }}">Download {{ title }}</a>
+		{{ collection from="siteoftheday" taxonomy="{ title }"" limit="6" paginate="true" as="posts" }}
 		    	<div>
 		    		<div>
 			    		{{ posts }}

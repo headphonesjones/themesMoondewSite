@@ -1,3 +1,5 @@
-title: 'Theme Recommendations & Lists'
+title: Theme Recommendations & Lists
 order: number
 fieldset: recommendations
+template: detailrecommendations
+page_title: {{ title }} · Theme Recommendations & Lists by Moondew

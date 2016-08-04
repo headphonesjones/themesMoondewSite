@@ -9,3 +9,7 @@ fields:
     container: main
     folder: img
     max_files: 1
+  body:
+    type: markdown
+    display: Body
+    cheatsheet: false
