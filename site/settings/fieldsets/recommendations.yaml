@@ -13,3 +13,5 @@ fields:
     type: markdown
     display: Body
     cheatsheet: false
+    container: main
+    folder: img

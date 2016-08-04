@@ -11,8 +11,8 @@ fields:
     container: main
     folder: img
     max_files: 1
-  content:
+  body:
     type: markdown
-    display: Content
+    display: Body
     localizable: true
     cheatsheet: false

@@ -12,3 +12,9 @@ fields:
   subtitle:
     type: textarea
     display: Subtitle
+  body:
+    type: markdown
+    display: Body
+    cheatsheet: false
+    container: main
+    folder: img

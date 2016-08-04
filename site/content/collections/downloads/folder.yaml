@@ -1,3 +1,5 @@
 title: Downloads
 order: number
 fieldset: downloads
+template: detaildownloads
+page_title: {{ title }} · Theme Recommendations & Lists by Moondew

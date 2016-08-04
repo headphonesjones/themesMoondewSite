@@ -2,3 +2,5 @@ order: date
 fieldset: post
 template: blog/post
 title: Blog
+template: detailblog
+page_title: {{ title }} · Theme Recommendations & Lists by Moondew

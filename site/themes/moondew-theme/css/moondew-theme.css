@@ -225,19 +225,30 @@ nav li.active {
 
 
 
-/*SITE OF THE DAY DETAIL -----------------------------------------------------
+/*DETAIL SHARED -----------------------------------------------------
 ---------------------------------------------------------
 ---------------------------------------------------------*/
 
-.detailsiteoftheday a {
-  border-bottom: 1px solid #272727;
-  box-shadow: inset 0 -4px 0 #272727;
-  transition: background 0.4s ease-out;
+.detail .postcontent {
+  margin-bottom:1.3125em;
+  padding-bottom:0px;
 }
 
-.detailsiteoftheday a:hover {
-  background: #272727;
+.detail h2 {
+  font-size:2.25em;
+  line-height:1.3em;
 }
+
+.detail h2 a {
+  font-size:inherit;
+  padding-top:3px;
+}
+
+
+
+/*DETAIL SITE OF THE DAY -----------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------*/
 
 .detailsiteoftheday .postheroimage {
   padding-bottom:2.625rem;
@@ -245,21 +256,6 @@ nav li.active {
 
 .detailsiteoftheday .postheroimage img {
   margin-top:0px;
-}
-
-.detailsiteoftheday .postcontent {
-  margin-bottom:1.3125em;
-  padding-bottom:0px;
-}
-
-.detailsiteoftheday .postcontent h2 {
-  font-size:2.25em;
-  line-height:1.3em;
-}
-
-.detailsiteoftheday .postcontent h2 a {
-  font-size:inherit;
-  padding-top:3px;
 }
 
 .detailsiteoftheday .postdate {
@@ -270,6 +266,53 @@ nav li.active {
 .detailsiteoftheday .posttags {
   padding-bottom:0px;
   margin-top:0px;
+}
+
+
+
+/*DETAIL BLOG -----------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------*/
+
+.detailblog .postdate {
+  float:none;
+  display:inline-block;
+}
+
+.by {
+  display:inline-block;
+  padding-right:.2em;
+}
+
+
+
+/*DETAIL DOWNLOADS -----------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------*/
+
+.detaildownloads .content {
+  background:#272727;
+  color:#FFFFFF;
+  text-align:center;
+}
+
+.by {
+  display:inline-block;
+  padding-right:.2em;
+}
+
+.body {
+  text-align:left;
+}
+
+.detaildownloads .postcontent a {
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: inset 0 -4px 0 #FFFFFF;
+  transition: background 0.4s ease-out;
+}
+
+.detaildownloads .postcontent a:hover {
+  background: #FFFFFF;
 }
 
 
