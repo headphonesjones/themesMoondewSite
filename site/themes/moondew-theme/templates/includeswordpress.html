@@ -1,0 +1,38 @@
+<div class="row home">
+	<div class="medium-8 medium-push-2 columns content">
+		<h2>{{ title }}</h2>
+		<p>Tungsten is a sans-serif typeface released by Hoefler & Frere-Jones (now known as Hoefler & Co.) in 2009. This style of flat-sided sans-serif is known as gaspipe and was popular with poster designers of the twentieth century as the flat sides made it easy to space letters. The normal version of Tungsten is a fairly condensed font, however, there are three additional widths—narrow, condensed and compressed—that take the design into ever more compact territory. Each width of Tungsten is available in eight weights, however, there are no italic styles available.</p>
+		<a href="http://www.wordpress.org">Download Wordpress</a>
+		{{ collection from="siteoftheday" taxonomy="Wordpress" limit="6" paginate="true" as="posts" }}
+		    	<div>
+		    		<div>
+			    		{{ posts }}
+				    		<div class="postheroimage">
+				    			{{ assets:hero_image }}
+									<a href="{{ slug ensure_left="siteoftheday/" }}"><img src="{{ url }}" alt="{{ alt }}" /></a>
+								{{ /assets:hero_image }}
+				    		</div>
+				    		<div class="postcontent">
+								<a href="{{ url }}">{{ title | safe_truncate:50:... }}</a>
+								<p class="postdate">{{ date }}</p>
+								<hr>
+								<p class="posttags">Includes—
+									{{ relate:tags }}
+										<a href="{{ url }}">{{ title }}</a>
+									{{ /relate:tags }}
+								</p>
+								<hr>
+							</div>
+						{{ /posts }}
+					</div>    
+				</div>
+				<div class="paginate">
+					{{ paginate }}
+				        <a href="{{ prev_page }}">← Newer</a>
+				        <a href="{{ next_page }}">Older →</a>
+				        <p>Page {{ current_page }} of {{ total_pages }}</p>
+				    {{ /paginate }}
+				</div>
+		{{ /collection }}
+	</div>
+</div>

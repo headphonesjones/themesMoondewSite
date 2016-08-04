@@ -10,10 +10,9 @@ routes:
   /reset-password: auth/password-reset
 collections:
   blog: 'blog/{slug}'
-  stuff: '/stuff/{slug}'
   siteoftheday: 'siteoftheday/{slug}'
   downloads: 'downloads/{slug}'
-  recommendations: recommendations/
+  recommendations: 'recommendations/{slug}'
 taxonomies:
-  tags: '/site-of-the-day/includes/{slug}'
+  tags: '/siteoftheday/includes/{slug}'
 vanity: [ ]

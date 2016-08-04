@@ -13,3 +13,6 @@ fields:
     type: taxonomy
     display: Tags
     taxonomy: tags
+  surl:
+    type: text
+    display: Site URL

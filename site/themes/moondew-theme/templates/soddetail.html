@@ -1,0 +1,18 @@
+<div class="row soddetail">
+	<div class="medium-8 medium-push-2 columns content">
+		<div class="postcontent">
+			<h2><a href="http://{{ surl }}">{{ title | safe_truncate:100:... }}</a></h2>
+			<p class="postdate">Site of the Day · {{ date }}</p>
+			<p class="posttags">Includes—
+				{{ relate:tags }}
+					<a href="{{ url }}">{{ title }}</a>
+				{{ /relate:tags }}
+			</p>
+		</div>
+		<div class="postheroimage">
+			{{ assets:hero_image }}
+				<a href="http://{{ surl }}"><img src="{{ url }}" alt="{{ alt }}" /></a>
+			{{ /assets:hero_image }}
+		</div>
+	</div>
+</div>
