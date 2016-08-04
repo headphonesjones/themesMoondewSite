@@ -1,6 +1,8 @@
+roles:
+  - d32e14fb-08c9-44c2-aaf8-21200852bafd
+email: josamjohn@gmail.com
 first_name: Jordan
 last_name: Johnson
-email: josamjohn@gmail.com
 super: true
 password_hash: $2y$10$rZ1EW3VRn4PdV3rns/.3JehRSteNJGgsrUxeAmlMnHzuqWla7iJ.u
 id: ac5b26d3-b7f0-46e2-9f00-370bc74ecfa5
